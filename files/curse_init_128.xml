@@ -1,0 +1,13 @@
+<Entity>
+	<LuaComponent
+		script_source_file="data/scripts/projectiles/curse_init.lua"
+		execute_every_n_frame="1"
+		>
+	</LuaComponent>
+    
+    <VariableStorageComponent
+        name="curse_stack_storage"
+        value_int="128"
+        >
+    </VariableStorageComponent>
+</Entity>
