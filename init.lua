@@ -64,7 +64,7 @@ function uncram(entity, max_slots)
                 EntityRemoveFromParent(item)
                 local components = EntityGetAllComponents(item)
                 for m,comp in ipairs(components) do
-                    if(ComponentHasTag(comp, "enabled_in_world")) then
+                    if(ComponentHasTag(comp, "enabled_in_world") and not ComponentHasTag(comp, "item_unidentified")) then
                         EntitySetComponentIsEnabled(item, comp, true)
                     end
                 end
